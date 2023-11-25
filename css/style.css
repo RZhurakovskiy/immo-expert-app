@@ -330,7 +330,7 @@ Select
 .favorites-body {
     position: fixed;
     right: 0;
-    bottom: 10%;
+    bottom: 6%;
     overflow-x: hidden;
     background-color: #ffffff;
     width: 500px;
@@ -341,6 +341,7 @@ Select
 }
 .favorites-body.active {
     transform: translateX(0);
+    background-color: #ffffff;
 }
 .favorites-list {
     margin-bottom: 5px;
@@ -1022,5 +1023,24 @@ Select
     .detailed-info {
         font-size: 14px;
         line-height: 2rem;
+    }
+}
+
+.arrow-left {
+    width: 30px;
+}
+.back-btn {
+    color: #fff;
+    position: fixed;
+    background-color: #4b5ac5;
+    padding: 10px;
+    left: 1%;
+    bottom: 1%;
+    z-index: 2;
+    font-size: 14px;
+}
+@media (max-width: 450px) {
+    .back-btn {
+        font-size: 12px;
     }
 }
